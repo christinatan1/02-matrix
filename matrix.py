@@ -44,11 +44,8 @@ def ident(matrix):
 #m1 * m2 -> m2
 def matrix_mult(m1, m2):
     result = new_matrix(cols = len(m2))
-    #rows in m1:
     for x in range(len(m2)):
-        #columns in m2:
         for y in range(len(m1[0])):
-            #rows in m2:
             for z in range(len(m1)):
                 result[x][y] += m1[z][y] * m2[x][z]
     for i in range(len(result)):
